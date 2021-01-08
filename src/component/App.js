@@ -1,12 +1,12 @@
-/* eslint-disable react/prefer-stateless-function */
 import React from 'react';
+import Display from './Display';
+// import Buttons from './ButtonPanel';
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <h1>My First React App</h1>
-      </div>
-    );
-  }
-}
+const App = () => (
+  <>
+    <Display />
+    {/* <Buttons /> */}
+  </>
+);
+
+export default App;
