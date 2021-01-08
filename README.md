@@ -1,4 +1,4 @@
-# Online Directory of Rental Properties
+# Calculator
 
 > A simple calculator app built using reactJS. This app is my introduction to the react javascript framework
 
