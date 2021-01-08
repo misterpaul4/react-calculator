@@ -1,4 +1,4 @@
-/* eslint-disable class-methods-use-this */
+/* eslint-disable react/prefer-stateless-function */
 import React from 'react';
 
 export default class App extends React.Component {
