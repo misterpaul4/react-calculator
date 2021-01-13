@@ -17,6 +17,8 @@ const calculate = ({ total, next, operation }, btnName) => {
     if (next && !next.includes('.')) {
       modObj.next = next.concat('.');
     } else if (!total.includes('.')) { modObj.total = total.concat('.'); }
+  } else if (btnName === '=') {
+    modObj.total = operate(total, next, operation);
   } else if (symb.includes(btnName)) {
     if (total && next) {
       modObj = {
