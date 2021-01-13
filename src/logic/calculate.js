@@ -39,12 +39,4 @@ const calculate = ({ total, next, operation }, btnName) => {
   return modObj;
 };
 
-// const testObj = {
-//   total: '5',
-//   next: '',
-//   operation: '+',
-// };
-
-// console.log(calculate(testObj, '.'));
-
 export default calculate;

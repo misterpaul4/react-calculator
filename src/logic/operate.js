@@ -14,6 +14,7 @@ const operate = (numberOne, numberTwo, operation) => {
     case '/':
       return x.div(y).toNumber();
     case '%':
+      if (numberTwo) { return y.div(100).toNumber(); }
       return x.div(100).toNumber();
     default:
       return null;
