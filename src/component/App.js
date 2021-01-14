@@ -11,7 +11,7 @@ export default class App extends React.Component {
     super(props);
 
     this.state = {
-      total: '23',
+      total: '',
       next: '',
       operation: '',
     };
@@ -43,7 +43,7 @@ export default class App extends React.Component {
     return (
       <>
         <Display result={this.handleDisplay()} />
-        <ButtonPanel onClick={this.handleClick} />
+        <ButtonPanel clickHandler={this.handleClick} />
       </>
     );
   }
