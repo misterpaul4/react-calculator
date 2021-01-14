@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import operate from './operate';
 
 const calculate = ({ total, next, operation }, btnName) => {
@@ -12,7 +13,9 @@ const calculate = ({ total, next, operation }, btnName) => {
       operation: '',
     };
   } else if (btnName === '+/-') {
-    if (next) { modObj.next = next * -1; } else { modObj.total = total * -1; }
+    if (next) {
+      modObj.next = `${next * -1}`;
+    } else { modObj.total = `${total * -1}`; }
   } else if (btnName === '.') {
     if (next && !next.includes('.')) {
       modObj.next = next.concat('.');
@@ -21,12 +24,18 @@ const calculate = ({ total, next, operation }, btnName) => {
     modObj.total = operate(total, next, operation);
   } else if (symb.includes(btnName)) {
     if (total && next) {
-      modObj = {
-        total: operate(total, next, operation),
-        next: '',
-      };
+      if (btnName === '%') {
+        modObj.next = operate(total, next, btnName);
+      } else {
+        modObj.total = operate(total, next, operation);
+        modObj.operation = btnName;
+      }
     } else if (total) {
-      modObj.operation = btnName;
+      if (btnName === '%') {
+        modObj.total = operate(total, next, btnName);
+      } else {
+        modObj.operation = btnName;
+      }
     }
   } else if (numbers.includes(btnName)) {
     if (!operation) {

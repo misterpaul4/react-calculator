@@ -1,8 +1,16 @@
+/* eslint-disable no-console */
 import Big from 'big.js';
 
 const operate = (numberOne, numberTwo, operation) => {
-  const x = Big(numberOne);
-  const y = Big(numberTwo);
+  let x;
+  let y;
+
+  try {
+    x = Big(numberOne);
+    y = Big(numberTwo);
+  } catch (err) {
+    x = Big(numberOne);
+  }
 
   switch (operation) {
     case '-':
@@ -17,7 +25,7 @@ const operate = (numberOne, numberTwo, operation) => {
       if (numberTwo) { return y.div(100).toNumber(); }
       return x.div(100).toNumber();
     default:
-      return null;
+      return '';
   }
 };
 

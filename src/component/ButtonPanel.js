@@ -15,7 +15,7 @@ const ButtonPanel = ({ clickHandler }) => (
       <Button handleClick={clickHandler} name="7" />
       <Button handleClick={clickHandler} name="8" />
       <Button handleClick={clickHandler} name="9" />
-      <Button handleClick={clickHandler} name="X" />
+      <Button handleClick={clickHandler} name="x" />
     </div>
 
     <div>
