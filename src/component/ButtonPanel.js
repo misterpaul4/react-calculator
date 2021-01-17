@@ -8,7 +8,7 @@ const ButtonPanel = ({ clickHandler }) => (
       <Button handleClick={clickHandler} name="AC" />
       <Button handleClick={clickHandler} name="+/-" />
       <Button handleClick={clickHandler} name="%" />
-      <Button handleClick={clickHandler} name="÷" />
+      <Button handleClick={clickHandler} name="/" />
     </div>
 
     <div>

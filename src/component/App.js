@@ -1,6 +1,3 @@
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable react/no-access-state-in-setstate */
-/* eslint-disable no-console */
 import React from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
@@ -20,30 +17,17 @@ export default class App extends React.Component {
   }
 
   handleClick(btnName) {
-    const calcObj = calculate(this.state, btnName);
-    this.setState({
-      total: calcObj.total,
-      next: calcObj.next,
-      operation: calcObj.operation,
-    });
-  }
-
-  handleDisplay() {
-    let screen = '';
-    if (this.state.next) {
-      screen = `${this.state.total} ${this.state.operation} ${this.state.next}`;
-    } else if (this.state.total) {
-      screen = this.state.operation ? (`${this.state.total} ${this.state.operation}`) : this.state.total;
-    }
-
-    return screen.toString();
+    this.setState(
+      prevState => (calculate(prevState, btnName)),
+    );
   }
 
   render() {
-    console.log(this.state);
+    const { next, total, operation } = this.state;
+
     return (
       <>
-        <Display result={this.handleDisplay()} />
+        <Display result={`${total} ${operation === '=' ? '' : operation} ${next}`} />
         <ButtonPanel clickHandler={this.handleClick} />
       </>
     );
