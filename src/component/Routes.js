@@ -10,8 +10,8 @@ const Routes = () => (
     <Nav />
     <Switch>
       <Route exact path="/quote" component={Quote} />
-      <Route exact path="/calculator" component={App} />
-      <Route exact path="/" component={Homepage} />
+      <Route exact path="/" component={App} />
+      <Route exact path="/homepage" component={Homepage} />
     </Switch>
   </BrowserRouter>
 );
