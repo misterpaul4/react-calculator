@@ -17,10 +17,10 @@ const App = () => {
   const { next, total, operation } = calcObj;
 
   return (
-    <>
-      <Display result={`${total} ${operation === '=' ? '' : operation} ${next}`} />
+    <div className="calculator">
+      <Display result={`${total} ${operation} ${next}`} />
       <ButtonPanel clickHandler={handleClick} />
-    </>
+    </div>
   );
 };
 

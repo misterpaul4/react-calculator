@@ -1,3 +1,31 @@
-h1 {
-  font-size: 3rem;
+.calculator {
+  max-width: 700px;
+}
+
+.display {
+  height: 100px;
+  color: white;
+  background-color: gray;
+  font-weight: bold;
+  padding: 2px 5px;
+  justify-content: end;
+}
+
+.flex-column {
+  display: flex;
+  align-items: center;
+}
+
+.btn-panel > * {
+  height: 100px;
+  display: flex;
+}
+
+button {
+  flex: 1 1 25%;
+  border-radius: 0;
+}
+
+.btn-panel .bottom button:first-child {
+  flex-basis: 50%;
 }
