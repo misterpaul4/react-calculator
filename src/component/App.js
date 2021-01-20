@@ -18,7 +18,7 @@ const App = () => {
 
   return (
     <div className="calculator">
-      <Display result={`${total} ${operation} ${next}`} />
+      <Display result={total ? `${total} ${operation} ${next}` : '0'} />
       <ButtonPanel clickHandler={handleClick} />
     </div>
   );
