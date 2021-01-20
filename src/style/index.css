@@ -1,14 +1,20 @@
 .calculator {
   max-width: 700px;
+  margin: 0 auto;
+}
+
+.disp-container {
+  background-color: gray;
+  padding: 2px 2%;
 }
 
 .display {
   height: 100px;
   color: white;
-  background-color: gray;
   font-weight: bold;
-  padding: 2px 5px;
+  overflow-x: hidden;
   justify-content: end;
+  font-size: xx-large;
 }
 
 .flex-column {
@@ -24,6 +30,11 @@
 button {
   flex: 1 1 25%;
   border-radius: 0;
+  font-size: x-large;
+}
+
+button:last-child {
+  background-color: orange;
 }
 
 .btn-panel .bottom button:first-child {
