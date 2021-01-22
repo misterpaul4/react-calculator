@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Button from './Button';
 
 const ButtonPanel = ({ clickHandler }) => (
-  <div>
+  <div className="btn-panel">
     <div>
       <Button handleClick={clickHandler} name="AC" />
       <Button handleClick={clickHandler} name="+/-" />
@@ -32,7 +32,7 @@ const ButtonPanel = ({ clickHandler }) => (
       <Button handleClick={clickHandler} name="+" />
     </div>
 
-    <div>
+    <div className="bottom">
       <Button handleClick={clickHandler} name="0" />
       <Button handleClick={clickHandler} name="." />
       <Button handleClick={clickHandler} name="=" />

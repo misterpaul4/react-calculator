@@ -1,3 +1,50 @@
-h1 {
-  font-size: 3rem;
+.calculator {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+}
+
+header a {
+  margin: 20px;
+}
+
+.disp-container {
+  background-color: gray;
+  padding: 2px 2%;
+}
+
+.display {
+  height: 100px;
+  color: white;
+  font-weight: bold;
+  overflow-x: hidden;
+  justify-content: end;
+  font-size: xx-large;
+}
+
+.flex-column {
+  display: flex;
+  align-items: center;
+}
+
+.btn-panel > * {
+  height: 100px;
+  display: flex;
+}
+
+button {
+  flex: 1 1 25%;
+  border-radius: 0;
+  font-size: x-large;
+}
+
+button:last-child {
+  background-color: orange;
+}
+
+.btn-panel .bottom button:first-child {
+  flex-basis: 50%;
 }
