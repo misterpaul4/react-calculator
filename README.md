@@ -1,6 +1,6 @@
 # Calculator
 
-> A simple calculator app built using reactJS. This app is my introduction to the react javascript framework
+> A calculator app built using reactJS. This app is my introduction to the react javascript framework
 
 ## Built With
 
@@ -14,6 +14,10 @@ make sure nodejs & npm is installed in your machine
 - clone the repository `git clone https://github.com/misterpaul4/react-calculator.git`
 - install dependecies `npm install`
 - start the server `npm start`
+
+
+## Test
+To run tests on the modules and components, run `npm test`. Make sure the dependencies installed successfully before running tests
 
 ## Authors
 
