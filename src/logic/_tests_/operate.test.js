@@ -1,16 +1,6 @@
 import operate from '../operate';
 
 describe('operation', () => {
-  // let state;
-
-  // beforeEach(() => {
-  //   state = {
-  //     total: '5',
-  //     next: '8',
-  //     operation: '+',
-  //   };
-  // });
-
   it('should add two numbers', () => {
     expect(operate(15, 10, '+')).toBe('25');
     expect(operate(15, 10, '+')).not.toBe('215');
