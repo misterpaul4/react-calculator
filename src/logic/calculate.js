@@ -18,7 +18,7 @@ const calculate = ({ total, next, operation }, btnName) => {
   } else if (btnName === '.') {
     if (operation && !next.includes('.')) {
       modObj.next = next === '' ? '0.' : next.concat('.');
-    } else if (!total.includes('.')) { modObj.total = total === '' ? '0.' : total.concat('.'); }
+    } else if (!total.includes('.') && !next) { modObj.total = total === '' ? '0.' : total.concat('.'); }
   } else if (btnName === '=' && next) {
     const res = operate(total, next, operation);
 

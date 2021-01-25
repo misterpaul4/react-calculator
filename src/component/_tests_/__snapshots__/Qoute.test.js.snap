@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly the Quote Page 1`] = `
+<p>
+  Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding. –William Paul Thurston
+</p>
+`;
+
+exports[`renders the Quote Page  1`] = `
+<p>
+  Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding. –William Paul Thurston
+</p>
+`;
+
+exports[`renders the Quote Page 1`] = `
+<p>
+  Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding. –William Paul Thurston
+</p>
+`;
+
+exports[`renders the Quote Page correctly without errors 1`] = `
+<p>
+  Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding. –William Paul Thurston
+</p>
+`;
+
+exports[`renders the Quote Page wi 1`] = `
+<p>
+  Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding. –William Paul Thurston
+</p>
+`;
