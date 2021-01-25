@@ -21,7 +21,7 @@ header a {
   color: white;
   font-weight: bold;
   overflow-x: hidden;
-  justify-content: end;
+  justify-content: flex-end;
   font-size: xx-large;
 }
 
