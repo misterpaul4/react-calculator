@@ -27,7 +27,7 @@ header a {
 
 .flex-column {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .btn-panel > * {
